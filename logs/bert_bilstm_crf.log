@@ -820,3 +820,675 @@
 2021-08-05 16:15:36,539 - INFO - main.py - train - 52 - 【train】 epoch:2 359/360 loss:0.9405
 2021-08-05 16:15:39,430 - INFO - main.py - train - 56 - [eval] loss:30.8463 precision=0.9382 recall=0.8919 f1_score=0.9145
 2021-08-05 16:15:39,430 - INFO - trainUtils.py - save_model - 70 - Saving model checkpoint to ./checkpoints/bert_bilstm_crf
+2022-06-29 11:14:35,633 - INFO - main.py - <module> - 192 - {0: 'O', 1: 'B-PRO', 2: 'I-PRO', 3: 'E-PRO', 4: 'S-PRO', 5: 'B-ORG', 6: 'I-ORG', 7: 'E-ORG', 8: 'S-ORG', 9: 'B-CONT', 10: 'I-CONT', 11: 'E-CONT', 12: 'S-CONT', 13: 'B-RACE', 14: 'I-RACE', 15: 'E-RACE', 16: 'S-RACE', 17: 'B-NAME', 18: 'I-NAME', 19: 'E-NAME', 20: 'S-NAME', 21: 'B-EDU', 22: 'I-EDU', 23: 'E-EDU', 24: 'S-EDU', 25: 'B-LOC', 26: 'I-LOC', 27: 'E-LOC', 28: 'S-LOC', 29: 'B-TITLE', 30: 'I-TITLE', 31: 'E-TITLE', 32: 'S-TITLE'}
+2022-06-29 11:14:35,633 - INFO - main.py - <module> - 194 - Namespace(adam_epsilon=1e-08, bert_dir='./model/chinese-roberta-wwm-ext/', crf_lr=0.03, data_dir='./data/cner', dropout=0.3, dropout_prob=0.1, eval_batch_size=12, gpu_ids='3', log_dir='./logs/', lr=3e-05, lstm_hidden=128, max_grad_norm=1, max_seq_len=150, num_layers=1, num_tags=33, other_lr=0.0003, output_dir='./checkpoints/', seed=123, swa_start=3, train_batch_size=32, train_epochs=3, use_crf='True', use_lstm='True', warmup_proportion=0.1, weight_decay=0.01)
+2022-06-29 11:14:44,472 - INFO - trainUtils.py - load_model_and_parallel - 106 - Use single gpu in: ['3']
+2022-06-29 11:14:45,311 - INFO - main.py - train - 52 - 【train】 epoch:0 0/360 loss:103.1360
+2022-06-29 11:14:45,931 - INFO - main.py - train - 52 - 【train】 epoch:0 1/360 loss:113.5208
+2022-06-29 11:14:46,499 - INFO - main.py - train - 52 - 【train】 epoch:0 2/360 loss:99.7815
+2022-06-29 11:14:47,061 - INFO - main.py - train - 52 - 【train】 epoch:0 3/360 loss:142.3855
+2022-06-29 11:14:47,813 - INFO - main.py - train - 52 - 【train】 epoch:0 4/360 loss:110.6814
+2022-06-29 11:14:48,486 - INFO - main.py - train - 52 - 【train】 epoch:0 5/360 loss:124.8624
+2022-06-29 11:14:49,068 - INFO - main.py - train - 52 - 【train】 epoch:0 6/360 loss:86.3167
+2022-06-29 11:14:49,637 - INFO - main.py - train - 52 - 【train】 epoch:0 7/360 loss:118.2054
+2022-06-29 11:14:50,173 - INFO - main.py - train - 52 - 【train】 epoch:0 8/360 loss:104.0153
+2022-06-29 11:14:50,902 - INFO - main.py - train - 52 - 【train】 epoch:0 9/360 loss:117.5657
+2022-06-29 11:14:51,594 - INFO - main.py - train - 52 - 【train】 epoch:0 10/360 loss:96.4266
+2022-06-29 11:14:52,136 - INFO - main.py - train - 52 - 【train】 epoch:0 11/360 loss:94.1910
+2022-06-29 11:14:52,737 - INFO - main.py - train - 52 - 【train】 epoch:0 12/360 loss:92.2961
+2022-06-29 11:14:53,363 - INFO - main.py - train - 52 - 【train】 epoch:0 13/360 loss:87.4947
+2022-06-29 11:14:53,953 - INFO - main.py - train - 52 - 【train】 epoch:0 14/360 loss:101.3655
+2022-06-29 11:14:54,515 - INFO - main.py - train - 52 - 【train】 epoch:0 15/360 loss:77.2299
+2022-06-29 11:14:55,102 - INFO - main.py - train - 52 - 【train】 epoch:0 16/360 loss:84.7948
+2022-06-29 11:14:55,767 - INFO - main.py - train - 52 - 【train】 epoch:0 17/360 loss:86.7303
+2022-06-29 11:14:56,362 - INFO - main.py - train - 52 - 【train】 epoch:0 18/360 loss:70.9427
+2022-06-29 11:14:56,965 - INFO - main.py - train - 52 - 【train】 epoch:0 19/360 loss:65.6718
+2022-06-29 11:14:57,540 - INFO - main.py - train - 52 - 【train】 epoch:0 20/360 loss:60.4457
+2022-06-29 11:14:58,134 - INFO - main.py - train - 52 - 【train】 epoch:0 21/360 loss:62.1448
+2022-06-29 11:14:58,694 - INFO - main.py - train - 52 - 【train】 epoch:0 22/360 loss:61.0476
+2022-06-29 11:14:59,238 - INFO - main.py - train - 52 - 【train】 epoch:0 23/360 loss:47.8343
+2022-06-29 11:14:59,856 - INFO - main.py - train - 52 - 【train】 epoch:0 24/360 loss:51.9105
+2022-06-29 11:15:00,505 - INFO - main.py - train - 52 - 【train】 epoch:0 25/360 loss:57.8678
+2022-06-29 11:15:01,074 - INFO - main.py - train - 52 - 【train】 epoch:0 26/360 loss:33.3448
+2022-06-29 11:15:01,699 - INFO - main.py - train - 52 - 【train】 epoch:0 27/360 loss:46.6188
+2022-06-29 11:15:02,463 - INFO - main.py - train - 52 - 【train】 epoch:0 28/360 loss:32.7806
+2022-06-29 11:15:03,086 - INFO - main.py - train - 52 - 【train】 epoch:0 29/360 loss:35.7812
+2022-06-29 11:15:03,741 - INFO - main.py - train - 52 - 【train】 epoch:0 30/360 loss:39.9604
+2022-06-29 11:15:04,382 - INFO - main.py - train - 52 - 【train】 epoch:0 31/360 loss:29.2880
+2022-06-29 11:15:04,988 - INFO - main.py - train - 52 - 【train】 epoch:0 32/360 loss:30.7484
+2022-06-29 11:15:05,590 - INFO - main.py - train - 52 - 【train】 epoch:0 33/360 loss:24.8234
+2022-06-29 11:15:06,155 - INFO - main.py - train - 52 - 【train】 epoch:0 34/360 loss:23.9709
+2022-06-29 11:15:06,702 - INFO - main.py - train - 52 - 【train】 epoch:0 35/360 loss:24.4687
+2022-06-29 11:15:07,266 - INFO - main.py - train - 52 - 【train】 epoch:0 36/360 loss:23.4123
+2022-06-29 11:15:07,815 - INFO - main.py - train - 52 - 【train】 epoch:0 37/360 loss:17.8274
+2022-06-29 11:15:08,418 - INFO - main.py - train - 52 - 【train】 epoch:0 38/360 loss:16.1305
+2022-06-29 11:15:08,944 - INFO - main.py - train - 52 - 【train】 epoch:0 39/360 loss:23.0278
+2022-06-29 11:15:09,513 - INFO - main.py - train - 52 - 【train】 epoch:0 40/360 loss:16.7262
+2022-06-29 11:15:10,096 - INFO - main.py - train - 52 - 【train】 epoch:0 41/360 loss:11.5670
+2022-06-29 11:15:10,726 - INFO - main.py - train - 52 - 【train】 epoch:0 42/360 loss:11.4828
+2022-06-29 11:15:11,292 - INFO - main.py - train - 52 - 【train】 epoch:0 43/360 loss:14.9441
+2022-06-29 11:15:11,838 - INFO - main.py - train - 52 - 【train】 epoch:0 44/360 loss:12.8857
+2022-06-29 11:15:12,434 - INFO - main.py - train - 52 - 【train】 epoch:0 45/360 loss:8.2750
+2022-06-29 11:15:13,032 - INFO - main.py - train - 52 - 【train】 epoch:0 46/360 loss:8.7982
+2022-06-29 11:15:13,658 - INFO - main.py - train - 52 - 【train】 epoch:0 47/360 loss:10.5619
+2022-06-29 11:15:14,251 - INFO - main.py - train - 52 - 【train】 epoch:0 48/360 loss:7.4534
+2022-06-29 11:15:14,864 - INFO - main.py - train - 52 - 【train】 epoch:0 49/360 loss:11.5093
+2022-06-29 11:15:15,476 - INFO - main.py - train - 52 - 【train】 epoch:0 50/360 loss:7.0244
+2022-06-29 11:15:16,074 - INFO - main.py - train - 52 - 【train】 epoch:0 51/360 loss:11.8160
+2022-06-29 11:15:16,707 - INFO - main.py - train - 52 - 【train】 epoch:0 52/360 loss:8.9329
+2022-06-29 11:15:17,279 - INFO - main.py - train - 52 - 【train】 epoch:0 53/360 loss:6.7814
+2022-06-29 11:15:17,863 - INFO - main.py - train - 52 - 【train】 epoch:0 54/360 loss:7.1532
+2022-06-29 11:15:18,539 - INFO - main.py - train - 52 - 【train】 epoch:0 55/360 loss:7.7743
+2022-06-29 11:15:19,128 - INFO - main.py - train - 52 - 【train】 epoch:0 56/360 loss:5.4887
+2022-06-29 11:15:19,779 - INFO - main.py - train - 52 - 【train】 epoch:0 57/360 loss:6.5392
+2022-06-29 11:15:20,321 - INFO - main.py - train - 52 - 【train】 epoch:0 58/360 loss:8.5329
+2022-06-29 11:15:20,915 - INFO - main.py - train - 52 - 【train】 epoch:0 59/360 loss:5.3096
+2022-06-29 11:15:21,528 - INFO - main.py - train - 52 - 【train】 epoch:0 60/360 loss:5.5799
+2022-06-29 11:15:22,150 - INFO - main.py - train - 52 - 【train】 epoch:0 61/360 loss:4.9025
+2022-06-29 11:15:22,744 - INFO - main.py - train - 52 - 【train】 epoch:0 62/360 loss:2.2368
+2022-06-29 11:15:23,340 - INFO - main.py - train - 52 - 【train】 epoch:0 63/360 loss:6.1777
+2022-06-29 11:15:23,955 - INFO - main.py - train - 52 - 【train】 epoch:0 64/360 loss:7.7940
+2022-06-29 11:15:24,588 - INFO - main.py - train - 52 - 【train】 epoch:0 65/360 loss:7.2164
+2022-06-29 11:15:25,140 - INFO - main.py - train - 52 - 【train】 epoch:0 66/360 loss:5.6029
+2022-06-29 11:15:25,726 - INFO - main.py - train - 52 - 【train】 epoch:0 67/360 loss:3.7911
+2022-06-29 11:15:26,335 - INFO - main.py - train - 52 - 【train】 epoch:0 68/360 loss:3.5754
+2022-06-29 11:15:26,918 - INFO - main.py - train - 52 - 【train】 epoch:0 69/360 loss:5.5559
+2022-06-29 11:15:27,502 - INFO - main.py - train - 52 - 【train】 epoch:0 70/360 loss:5.8996
+2022-06-29 11:15:28,097 - INFO - main.py - train - 52 - 【train】 epoch:0 71/360 loss:3.3677
+2022-06-29 11:15:28,721 - INFO - main.py - train - 52 - 【train】 epoch:0 72/360 loss:5.0213
+2022-06-29 11:15:29,262 - INFO - main.py - train - 52 - 【train】 epoch:0 73/360 loss:5.2905
+2022-06-29 11:15:29,820 - INFO - main.py - train - 52 - 【train】 epoch:0 74/360 loss:4.4574
+2022-06-29 11:15:30,482 - INFO - main.py - train - 52 - 【train】 epoch:0 75/360 loss:6.7960
+2022-06-29 11:15:31,113 - INFO - main.py - train - 52 - 【train】 epoch:0 76/360 loss:6.9578
+2022-06-29 11:15:31,813 - INFO - main.py - train - 52 - 【train】 epoch:0 77/360 loss:4.2707
+2022-06-29 11:15:32,374 - INFO - main.py - train - 52 - 【train】 epoch:0 78/360 loss:4.1221
+2022-06-29 11:15:32,941 - INFO - main.py - train - 52 - 【train】 epoch:0 79/360 loss:2.7794
+2022-06-29 11:15:33,533 - INFO - main.py - train - 52 - 【train】 epoch:0 80/360 loss:3.6378
+2022-06-29 11:15:34,153 - INFO - main.py - train - 52 - 【train】 epoch:0 81/360 loss:4.6406
+2022-06-29 11:15:34,863 - INFO - main.py - train - 52 - 【train】 epoch:0 82/360 loss:3.6544
+2022-06-29 11:15:35,562 - INFO - main.py - train - 52 - 【train】 epoch:0 83/360 loss:1.8313
+2022-06-29 11:15:36,268 - INFO - main.py - train - 52 - 【train】 epoch:0 84/360 loss:2.6239
+2022-06-29 11:15:36,894 - INFO - main.py - train - 52 - 【train】 epoch:0 85/360 loss:3.1708
+2022-06-29 11:15:37,638 - INFO - main.py - train - 52 - 【train】 epoch:0 86/360 loss:2.6647
+2022-06-29 11:15:38,241 - INFO - main.py - train - 52 - 【train】 epoch:0 87/360 loss:2.3200
+2022-06-29 11:15:38,842 - INFO - main.py - train - 52 - 【train】 epoch:0 88/360 loss:3.4549
+2022-06-29 11:15:39,479 - INFO - main.py - train - 52 - 【train】 epoch:0 89/360 loss:5.5996
+2022-06-29 11:15:45,181 - INFO - main.py - train - 56 - [eval] loss:114.9310 precision=0.9169 recall=0.8613 f1_score=0.8882
+2022-06-29 11:15:45,182 - INFO - trainUtils.py - save_model - 70 - Saving model checkpoint to ./checkpoints/bert_bilstm_crf
+2022-06-29 11:15:47,157 - INFO - main.py - train - 52 - 【train】 epoch:0 90/360 loss:1.7354
+2022-06-29 11:15:47,752 - INFO - main.py - train - 52 - 【train】 epoch:0 91/360 loss:3.8794
+2022-06-29 11:15:48,473 - INFO - main.py - train - 52 - 【train】 epoch:0 92/360 loss:1.7756
+2022-06-29 11:15:49,104 - INFO - main.py - train - 52 - 【train】 epoch:0 93/360 loss:3.7960
+2022-06-29 11:15:49,685 - INFO - main.py - train - 52 - 【train】 epoch:0 94/360 loss:3.8318
+2022-06-29 11:15:50,320 - INFO - main.py - train - 52 - 【train】 epoch:0 95/360 loss:4.7370
+2022-06-29 11:15:50,896 - INFO - main.py - train - 52 - 【train】 epoch:0 96/360 loss:3.4556
+2022-06-29 11:15:51,571 - INFO - main.py - train - 52 - 【train】 epoch:0 97/360 loss:3.1374
+2022-06-29 11:15:52,211 - INFO - main.py - train - 52 - 【train】 epoch:0 98/360 loss:1.7447
+2022-06-29 11:15:52,778 - INFO - main.py - train - 52 - 【train】 epoch:0 99/360 loss:3.9218
+2022-06-29 11:15:53,422 - INFO - main.py - train - 52 - 【train】 epoch:0 100/360 loss:1.9947
+2022-06-29 11:15:53,990 - INFO - main.py - train - 52 - 【train】 epoch:0 101/360 loss:2.2489
+2022-06-29 11:15:54,578 - INFO - main.py - train - 52 - 【train】 epoch:0 102/360 loss:4.0530
+2022-06-29 11:15:55,140 - INFO - main.py - train - 52 - 【train】 epoch:0 103/360 loss:2.3941
+2022-06-29 11:15:55,845 - INFO - main.py - train - 52 - 【train】 epoch:0 104/360 loss:1.0970
+2022-06-29 11:15:56,595 - INFO - main.py - train - 52 - 【train】 epoch:0 105/360 loss:2.2148
+2022-06-29 11:15:57,217 - INFO - main.py - train - 52 - 【train】 epoch:0 106/360 loss:2.6374
+2022-06-29 11:15:57,991 - INFO - main.py - train - 52 - 【train】 epoch:0 107/360 loss:3.1190
+2022-06-29 11:15:58,653 - INFO - main.py - train - 52 - 【train】 epoch:0 108/360 loss:2.1273
+2022-06-29 11:15:59,212 - INFO - main.py - train - 52 - 【train】 epoch:0 109/360 loss:3.9124
+2022-06-29 11:15:59,845 - INFO - main.py - train - 52 - 【train】 epoch:0 110/360 loss:3.2771
+2022-06-29 11:16:00,398 - INFO - main.py - train - 52 - 【train】 epoch:0 111/360 loss:1.4164
+2022-06-29 11:16:00,991 - INFO - main.py - train - 52 - 【train】 epoch:0 112/360 loss:2.5352
+2022-06-29 11:16:01,593 - INFO - main.py - train - 52 - 【train】 epoch:0 113/360 loss:1.1871
+2022-06-29 11:16:02,130 - INFO - main.py - train - 52 - 【train】 epoch:0 114/360 loss:3.3695
+2022-06-29 11:16:02,706 - INFO - main.py - train - 52 - 【train】 epoch:0 115/360 loss:2.5645
+2022-06-29 11:16:03,256 - INFO - main.py - train - 52 - 【train】 epoch:0 116/360 loss:2.0901
+2022-06-29 11:16:04,052 - INFO - main.py - train - 52 - 【train】 epoch:0 117/360 loss:2.2786
+2022-06-29 11:16:04,580 - INFO - main.py - train - 52 - 【train】 epoch:0 118/360 loss:3.7045
+2022-06-29 11:16:05,011 - INFO - main.py - train - 52 - 【train】 epoch:0 119/360 loss:1.2999
+2022-06-29 11:16:05,919 - INFO - main.py - train - 52 - 【train】 epoch:1 120/360 loss:3.2504
+2022-06-29 11:16:06,504 - INFO - main.py - train - 52 - 【train】 epoch:1 121/360 loss:1.6727
+2022-06-29 11:16:07,115 - INFO - main.py - train - 52 - 【train】 epoch:1 122/360 loss:2.6664
+2022-06-29 11:16:07,724 - INFO - main.py - train - 52 - 【train】 epoch:1 123/360 loss:1.4388
+2022-06-29 11:16:08,389 - INFO - main.py - train - 52 - 【train】 epoch:1 124/360 loss:2.5529
+2022-06-29 11:16:08,998 - INFO - main.py - train - 52 - 【train】 epoch:1 125/360 loss:2.3935
+2022-06-29 11:16:09,553 - INFO - main.py - train - 52 - 【train】 epoch:1 126/360 loss:2.6918
+2022-06-29 11:16:10,097 - INFO - main.py - train - 52 - 【train】 epoch:1 127/360 loss:2.8752
+2022-06-29 11:16:10,700 - INFO - main.py - train - 52 - 【train】 epoch:1 128/360 loss:1.9777
+2022-06-29 11:16:11,279 - INFO - main.py - train - 52 - 【train】 epoch:1 129/360 loss:2.5441
+2022-06-29 11:16:11,821 - INFO - main.py - train - 52 - 【train】 epoch:1 130/360 loss:1.5007
+2022-06-29 11:16:12,398 - INFO - main.py - train - 52 - 【train】 epoch:1 131/360 loss:1.5231
+2022-06-29 11:16:12,950 - INFO - main.py - train - 52 - 【train】 epoch:1 132/360 loss:1.0425
+2022-06-29 11:16:13,529 - INFO - main.py - train - 52 - 【train】 epoch:1 133/360 loss:4.3333
+2022-06-29 11:16:14,101 - INFO - main.py - train - 52 - 【train】 epoch:1 134/360 loss:0.8709
+2022-06-29 11:16:14,660 - INFO - main.py - train - 52 - 【train】 epoch:1 135/360 loss:2.2109
+2022-06-29 11:16:15,319 - INFO - main.py - train - 52 - 【train】 epoch:1 136/360 loss:1.5382
+2022-06-29 11:16:15,864 - INFO - main.py - train - 52 - 【train】 epoch:1 137/360 loss:2.1069
+2022-06-29 11:16:16,406 - INFO - main.py - train - 52 - 【train】 epoch:1 138/360 loss:0.7446
+2022-06-29 11:16:17,002 - INFO - main.py - train - 52 - 【train】 epoch:1 139/360 loss:1.8600
+2022-06-29 11:16:17,613 - INFO - main.py - train - 52 - 【train】 epoch:1 140/360 loss:2.6093
+2022-06-29 11:16:18,276 - INFO - main.py - train - 52 - 【train】 epoch:1 141/360 loss:1.5804
+2022-06-29 11:16:18,854 - INFO - main.py - train - 52 - 【train】 epoch:1 142/360 loss:1.1967
+2022-06-29 11:16:19,500 - INFO - main.py - train - 52 - 【train】 epoch:1 143/360 loss:2.3023
+2022-06-29 11:16:20,112 - INFO - main.py - train - 52 - 【train】 epoch:1 144/360 loss:0.8187
+2022-06-29 11:16:20,705 - INFO - main.py - train - 52 - 【train】 epoch:1 145/360 loss:0.9341
+2022-06-29 11:16:21,310 - INFO - main.py - train - 52 - 【train】 epoch:1 146/360 loss:1.0552
+2022-06-29 11:16:21,883 - INFO - main.py - train - 52 - 【train】 epoch:1 147/360 loss:2.7904
+2022-06-29 11:16:22,462 - INFO - main.py - train - 52 - 【train】 epoch:1 148/360 loss:1.4131
+2022-06-29 11:16:22,994 - INFO - main.py - train - 52 - 【train】 epoch:1 149/360 loss:1.2950
+2022-06-29 11:16:23,578 - INFO - main.py - train - 52 - 【train】 epoch:1 150/360 loss:0.8770
+2022-06-29 11:16:24,187 - INFO - main.py - train - 52 - 【train】 epoch:1 151/360 loss:2.2413
+2022-06-29 11:16:24,736 - INFO - main.py - train - 52 - 【train】 epoch:1 152/360 loss:1.6921
+2022-06-29 11:16:25,270 - INFO - main.py - train - 52 - 【train】 epoch:1 153/360 loss:1.6702
+2022-06-29 11:16:25,816 - INFO - main.py - train - 52 - 【train】 epoch:1 154/360 loss:1.8755
+2022-06-29 11:16:26,350 - INFO - main.py - train - 52 - 【train】 epoch:1 155/360 loss:1.8735
+2022-06-29 11:16:26,894 - INFO - main.py - train - 52 - 【train】 epoch:1 156/360 loss:2.2641
+2022-06-29 11:16:27,429 - INFO - main.py - train - 52 - 【train】 epoch:1 157/360 loss:1.9100
+2022-06-29 11:16:27,951 - INFO - main.py - train - 52 - 【train】 epoch:1 158/360 loss:2.4492
+2022-06-29 11:16:28,483 - INFO - main.py - train - 52 - 【train】 epoch:1 159/360 loss:0.9795
+2022-06-29 11:16:28,999 - INFO - main.py - train - 52 - 【train】 epoch:1 160/360 loss:2.4796
+2022-06-29 11:16:29,513 - INFO - main.py - train - 52 - 【train】 epoch:1 161/360 loss:1.4764
+2022-06-29 11:16:30,030 - INFO - main.py - train - 52 - 【train】 epoch:1 162/360 loss:2.3124
+2022-06-29 11:16:30,562 - INFO - main.py - train - 52 - 【train】 epoch:1 163/360 loss:1.5386
+2022-06-29 11:16:31,099 - INFO - main.py - train - 52 - 【train】 epoch:1 164/360 loss:3.0590
+2022-06-29 11:16:31,693 - INFO - main.py - train - 52 - 【train】 epoch:1 165/360 loss:3.1180
+2022-06-29 11:16:32,308 - INFO - main.py - train - 52 - 【train】 epoch:1 166/360 loss:1.2184
+2022-06-29 11:16:32,843 - INFO - main.py - train - 52 - 【train】 epoch:1 167/360 loss:0.9995
+2022-06-29 11:16:33,372 - INFO - main.py - train - 52 - 【train】 epoch:1 168/360 loss:1.9193
+2022-06-29 11:16:33,946 - INFO - main.py - train - 52 - 【train】 epoch:1 169/360 loss:2.7590
+2022-06-29 11:16:34,474 - INFO - main.py - train - 52 - 【train】 epoch:1 170/360 loss:2.1117
+2022-06-29 11:16:35,108 - INFO - main.py - train - 52 - 【train】 epoch:1 171/360 loss:1.5914
+2022-06-29 11:16:35,726 - INFO - main.py - train - 52 - 【train】 epoch:1 172/360 loss:2.5364
+2022-06-29 11:16:36,315 - INFO - main.py - train - 52 - 【train】 epoch:1 173/360 loss:1.6556
+2022-06-29 11:16:36,838 - INFO - main.py - train - 52 - 【train】 epoch:1 174/360 loss:1.2525
+2022-06-29 11:16:37,382 - INFO - main.py - train - 52 - 【train】 epoch:1 175/360 loss:2.3610
+2022-06-29 11:16:37,989 - INFO - main.py - train - 52 - 【train】 epoch:1 176/360 loss:2.1128
+2022-06-29 11:16:38,534 - INFO - main.py - train - 52 - 【train】 epoch:1 177/360 loss:2.3281
+2022-06-29 11:16:39,134 - INFO - main.py - train - 52 - 【train】 epoch:1 178/360 loss:1.0910
+2022-06-29 11:16:39,717 - INFO - main.py - train - 52 - 【train】 epoch:1 179/360 loss:3.0804
+2022-06-29 11:16:45,301 - INFO - main.py - train - 56 - [eval] loss:67.3892 precision=0.9476 recall=0.8919 f1_score=0.9189
+2022-06-29 11:16:45,302 - INFO - trainUtils.py - save_model - 70 - Saving model checkpoint to ./checkpoints/bert_bilstm_crf
+2022-06-29 11:16:47,197 - INFO - main.py - train - 52 - 【train】 epoch:1 180/360 loss:1.9948
+2022-06-29 11:16:47,804 - INFO - main.py - train - 52 - 【train】 epoch:1 181/360 loss:1.7972
+2022-06-29 11:16:48,384 - INFO - main.py - train - 52 - 【train】 epoch:1 182/360 loss:0.7018
+2022-06-29 11:16:48,958 - INFO - main.py - train - 52 - 【train】 epoch:1 183/360 loss:1.9260
+2022-06-29 11:16:49,520 - INFO - main.py - train - 52 - 【train】 epoch:1 184/360 loss:1.4945
+2022-06-29 11:16:50,119 - INFO - main.py - train - 52 - 【train】 epoch:1 185/360 loss:3.2360
+2022-06-29 11:16:50,644 - INFO - main.py - train - 52 - 【train】 epoch:1 186/360 loss:1.6869
+2022-06-29 11:16:51,234 - INFO - main.py - train - 52 - 【train】 epoch:1 187/360 loss:1.6724
+2022-06-29 11:16:51,850 - INFO - main.py - train - 52 - 【train】 epoch:1 188/360 loss:2.1155
+2022-06-29 11:16:52,429 - INFO - main.py - train - 52 - 【train】 epoch:1 189/360 loss:1.7823
+2022-06-29 11:16:53,059 - INFO - main.py - train - 52 - 【train】 epoch:1 190/360 loss:1.9064
+2022-06-29 11:16:53,668 - INFO - main.py - train - 52 - 【train】 epoch:1 191/360 loss:2.4650
+2022-06-29 11:16:54,269 - INFO - main.py - train - 52 - 【train】 epoch:1 192/360 loss:1.0451
+2022-06-29 11:16:55,001 - INFO - main.py - train - 52 - 【train】 epoch:1 193/360 loss:1.9873
+2022-06-29 11:16:55,592 - INFO - main.py - train - 52 - 【train】 epoch:1 194/360 loss:1.3034
+2022-06-29 11:16:56,166 - INFO - main.py - train - 52 - 【train】 epoch:1 195/360 loss:1.8794
+2022-06-29 11:16:56,813 - INFO - main.py - train - 52 - 【train】 epoch:1 196/360 loss:4.9538
+2022-06-29 11:16:57,466 - INFO - main.py - train - 52 - 【train】 epoch:1 197/360 loss:1.6524
+2022-06-29 11:16:58,103 - INFO - main.py - train - 52 - 【train】 epoch:1 198/360 loss:1.2649
+2022-06-29 11:16:58,819 - INFO - main.py - train - 52 - 【train】 epoch:1 199/360 loss:2.0900
+2022-06-29 11:16:59,411 - INFO - main.py - train - 52 - 【train】 epoch:1 200/360 loss:2.1240
+2022-06-29 11:17:00,045 - INFO - main.py - train - 52 - 【train】 epoch:1 201/360 loss:0.4253
+2022-06-29 11:17:00,598 - INFO - main.py - train - 52 - 【train】 epoch:1 202/360 loss:0.7264
+2022-06-29 11:17:01,152 - INFO - main.py - train - 52 - 【train】 epoch:1 203/360 loss:1.4935
+2022-06-29 11:17:01,828 - INFO - main.py - train - 52 - 【train】 epoch:1 204/360 loss:0.7851
+2022-06-29 11:17:02,408 - INFO - main.py - train - 52 - 【train】 epoch:1 205/360 loss:1.1355
+2022-06-29 11:17:02,968 - INFO - main.py - train - 52 - 【train】 epoch:1 206/360 loss:1.3356
+2022-06-29 11:17:03,590 - INFO - main.py - train - 52 - 【train】 epoch:1 207/360 loss:1.8919
+2022-06-29 11:17:04,211 - INFO - main.py - train - 52 - 【train】 epoch:1 208/360 loss:2.1454
+2022-06-29 11:17:04,788 - INFO - main.py - train - 52 - 【train】 epoch:1 209/360 loss:0.7287
+2022-06-29 11:17:05,427 - INFO - main.py - train - 52 - 【train】 epoch:1 210/360 loss:0.6688
+2022-06-29 11:17:06,012 - INFO - main.py - train - 52 - 【train】 epoch:1 211/360 loss:1.6199
+2022-06-29 11:17:06,534 - INFO - main.py - train - 52 - 【train】 epoch:1 212/360 loss:3.4116
+2022-06-29 11:17:07,136 - INFO - main.py - train - 52 - 【train】 epoch:1 213/360 loss:2.3602
+2022-06-29 11:17:07,719 - INFO - main.py - train - 52 - 【train】 epoch:1 214/360 loss:1.8379
+2022-06-29 11:17:08,348 - INFO - main.py - train - 52 - 【train】 epoch:1 215/360 loss:1.2171
+2022-06-29 11:17:08,872 - INFO - main.py - train - 52 - 【train】 epoch:1 216/360 loss:1.0495
+2022-06-29 11:17:09,465 - INFO - main.py - train - 52 - 【train】 epoch:1 217/360 loss:1.2586
+2022-06-29 11:17:10,027 - INFO - main.py - train - 52 - 【train】 epoch:1 218/360 loss:0.9782
+2022-06-29 11:17:10,682 - INFO - main.py - train - 52 - 【train】 epoch:1 219/360 loss:0.5532
+2022-06-29 11:17:11,366 - INFO - main.py - train - 52 - 【train】 epoch:1 220/360 loss:1.1972
+2022-06-29 11:17:12,053 - INFO - main.py - train - 52 - 【train】 epoch:1 221/360 loss:2.7795
+2022-06-29 11:17:12,688 - INFO - main.py - train - 52 - 【train】 epoch:1 222/360 loss:0.5590
+2022-06-29 11:17:13,361 - INFO - main.py - train - 52 - 【train】 epoch:1 223/360 loss:1.4223
+2022-06-29 11:17:13,961 - INFO - main.py - train - 52 - 【train】 epoch:1 224/360 loss:0.3860
+2022-06-29 11:17:14,538 - INFO - main.py - train - 52 - 【train】 epoch:1 225/360 loss:0.9699
+2022-06-29 11:17:15,099 - INFO - main.py - train - 52 - 【train】 epoch:1 226/360 loss:0.9378
+2022-06-29 11:17:15,729 - INFO - main.py - train - 52 - 【train】 epoch:1 227/360 loss:1.6988
+2022-06-29 11:17:16,341 - INFO - main.py - train - 52 - 【train】 epoch:1 228/360 loss:2.3949
+2022-06-29 11:17:16,887 - INFO - main.py - train - 52 - 【train】 epoch:1 229/360 loss:0.7154
+2022-06-29 11:17:17,434 - INFO - main.py - train - 52 - 【train】 epoch:1 230/360 loss:0.9928
+2022-06-29 11:17:18,065 - INFO - main.py - train - 52 - 【train】 epoch:1 231/360 loss:0.9635
+2022-06-29 11:17:18,727 - INFO - main.py - train - 52 - 【train】 epoch:1 232/360 loss:1.2431
+2022-06-29 11:17:19,321 - INFO - main.py - train - 52 - 【train】 epoch:1 233/360 loss:1.7109
+2022-06-29 11:17:19,887 - INFO - main.py - train - 52 - 【train】 epoch:1 234/360 loss:2.4271
+2022-06-29 11:17:20,495 - INFO - main.py - train - 52 - 【train】 epoch:1 235/360 loss:1.7365
+2022-06-29 11:17:21,114 - INFO - main.py - train - 52 - 【train】 epoch:1 236/360 loss:1.0827
+2022-06-29 11:17:21,655 - INFO - main.py - train - 52 - 【train】 epoch:1 237/360 loss:1.5093
+2022-06-29 11:17:22,236 - INFO - main.py - train - 52 - 【train】 epoch:1 238/360 loss:0.6223
+2022-06-29 11:17:22,700 - INFO - main.py - train - 52 - 【train】 epoch:1 239/360 loss:2.9025
+2022-06-29 11:17:23,657 - INFO - main.py - train - 52 - 【train】 epoch:2 240/360 loss:1.4643
+2022-06-29 11:17:24,279 - INFO - main.py - train - 52 - 【train】 epoch:2 241/360 loss:1.9474
+2022-06-29 11:17:24,892 - INFO - main.py - train - 52 - 【train】 epoch:2 242/360 loss:0.4785
+2022-06-29 11:17:25,457 - INFO - main.py - train - 52 - 【train】 epoch:2 243/360 loss:1.3792
+2022-06-29 11:17:26,062 - INFO - main.py - train - 52 - 【train】 epoch:2 244/360 loss:0.4502
+2022-06-29 11:17:26,699 - INFO - main.py - train - 52 - 【train】 epoch:2 245/360 loss:1.9577
+2022-06-29 11:17:27,247 - INFO - main.py - train - 52 - 【train】 epoch:2 246/360 loss:0.6516
+2022-06-29 11:17:28,000 - INFO - main.py - train - 52 - 【train】 epoch:2 247/360 loss:1.3798
+2022-06-29 11:17:28,615 - INFO - main.py - train - 52 - 【train】 epoch:2 248/360 loss:1.9777
+2022-06-29 11:17:29,286 - INFO - main.py - train - 52 - 【train】 epoch:2 249/360 loss:2.2106
+2022-06-29 11:17:29,850 - INFO - main.py - train - 52 - 【train】 epoch:2 250/360 loss:0.6295
+2022-06-29 11:17:30,531 - INFO - main.py - train - 52 - 【train】 epoch:2 251/360 loss:0.7614
+2022-06-29 11:17:31,192 - INFO - main.py - train - 52 - 【train】 epoch:2 252/360 loss:1.4388
+2022-06-29 11:17:31,761 - INFO - main.py - train - 52 - 【train】 epoch:2 253/360 loss:0.3795
+2022-06-29 11:17:32,332 - INFO - main.py - train - 52 - 【train】 epoch:2 254/360 loss:1.0193
+2022-06-29 11:17:33,024 - INFO - main.py - train - 52 - 【train】 epoch:2 255/360 loss:0.4052
+2022-06-29 11:17:33,589 - INFO - main.py - train - 52 - 【train】 epoch:2 256/360 loss:0.7353
+2022-06-29 11:17:34,281 - INFO - main.py - train - 52 - 【train】 epoch:2 257/360 loss:1.1337
+2022-06-29 11:17:34,904 - INFO - main.py - train - 52 - 【train】 epoch:2 258/360 loss:0.9745
+2022-06-29 11:17:35,444 - INFO - main.py - train - 52 - 【train】 epoch:2 259/360 loss:2.2114
+2022-06-29 11:17:36,013 - INFO - main.py - train - 52 - 【train】 epoch:2 260/360 loss:2.2227
+2022-06-29 11:17:36,571 - INFO - main.py - train - 52 - 【train】 epoch:2 261/360 loss:0.9851
+2022-06-29 11:17:37,219 - INFO - main.py - train - 52 - 【train】 epoch:2 262/360 loss:0.3477
+2022-06-29 11:17:37,809 - INFO - main.py - train - 52 - 【train】 epoch:2 263/360 loss:0.6956
+2022-06-29 11:17:38,346 - INFO - main.py - train - 52 - 【train】 epoch:2 264/360 loss:0.9781
+2022-06-29 11:17:38,986 - INFO - main.py - train - 52 - 【train】 epoch:2 265/360 loss:0.3325
+2022-06-29 11:17:39,629 - INFO - main.py - train - 52 - 【train】 epoch:2 266/360 loss:0.5474
+2022-06-29 11:17:40,227 - INFO - main.py - train - 52 - 【train】 epoch:2 267/360 loss:0.3609
+2022-06-29 11:17:40,780 - INFO - main.py - train - 52 - 【train】 epoch:2 268/360 loss:0.9172
+2022-06-29 11:17:41,354 - INFO - main.py - train - 52 - 【train】 epoch:2 269/360 loss:1.3800
+2022-06-29 11:17:46,704 - INFO - main.py - train - 56 - [eval] loss:63.1527 precision=0.9364 recall=0.8913 f1_score=0.9133
+2022-06-29 11:17:47,266 - INFO - main.py - train - 52 - 【train】 epoch:2 270/360 loss:1.5773
+2022-06-29 11:17:47,834 - INFO - main.py - train - 52 - 【train】 epoch:2 271/360 loss:0.6208
+2022-06-29 11:17:48,424 - INFO - main.py - train - 52 - 【train】 epoch:2 272/360 loss:1.0622
+2022-06-29 11:17:49,104 - INFO - main.py - train - 52 - 【train】 epoch:2 273/360 loss:1.1888
+2022-06-29 11:17:49,711 - INFO - main.py - train - 52 - 【train】 epoch:2 274/360 loss:1.0070
+2022-06-29 11:17:50,269 - INFO - main.py - train - 52 - 【train】 epoch:2 275/360 loss:1.1232
+2022-06-29 11:17:50,873 - INFO - main.py - train - 52 - 【train】 epoch:2 276/360 loss:1.3289
+2022-06-29 11:17:51,434 - INFO - main.py - train - 52 - 【train】 epoch:2 277/360 loss:0.5257
+2022-06-29 11:17:51,975 - INFO - main.py - train - 52 - 【train】 epoch:2 278/360 loss:1.2041
+2022-06-29 11:17:52,536 - INFO - main.py - train - 52 - 【train】 epoch:2 279/360 loss:0.6983
+2022-06-29 11:17:53,097 - INFO - main.py - train - 52 - 【train】 epoch:2 280/360 loss:0.7483
+2022-06-29 11:17:53,706 - INFO - main.py - train - 52 - 【train】 epoch:2 281/360 loss:0.6676
+2022-06-29 11:17:54,381 - INFO - main.py - train - 52 - 【train】 epoch:2 282/360 loss:0.5467
+2022-06-29 11:17:54,974 - INFO - main.py - train - 52 - 【train】 epoch:2 283/360 loss:1.1802
+2022-06-29 11:17:55,589 - INFO - main.py - train - 52 - 【train】 epoch:2 284/360 loss:1.5983
+2022-06-29 11:17:56,219 - INFO - main.py - train - 52 - 【train】 epoch:2 285/360 loss:0.8014
+2022-06-29 11:17:56,824 - INFO - main.py - train - 52 - 【train】 epoch:2 286/360 loss:1.0798
+2022-06-29 11:17:57,434 - INFO - main.py - train - 52 - 【train】 epoch:2 287/360 loss:2.3074
+2022-06-29 11:17:58,016 - INFO - main.py - train - 52 - 【train】 epoch:2 288/360 loss:1.5537
+2022-06-29 11:17:58,631 - INFO - main.py - train - 52 - 【train】 epoch:2 289/360 loss:0.7021
+2022-06-29 11:17:59,204 - INFO - main.py - train - 52 - 【train】 epoch:2 290/360 loss:1.0728
+2022-06-29 11:17:59,810 - INFO - main.py - train - 52 - 【train】 epoch:2 291/360 loss:1.4184
+2022-06-29 11:18:00,390 - INFO - main.py - train - 52 - 【train】 epoch:2 292/360 loss:1.1731
+2022-06-29 11:18:00,931 - INFO - main.py - train - 52 - 【train】 epoch:2 293/360 loss:0.7200
+2022-06-29 11:18:01,498 - INFO - main.py - train - 52 - 【train】 epoch:2 294/360 loss:0.1899
+2022-06-29 11:18:02,056 - INFO - main.py - train - 52 - 【train】 epoch:2 295/360 loss:1.3213
+2022-06-29 11:18:02,618 - INFO - main.py - train - 52 - 【train】 epoch:2 296/360 loss:0.2356
+2022-06-29 11:18:03,232 - INFO - main.py - train - 52 - 【train】 epoch:2 297/360 loss:1.1281
+2022-06-29 11:18:03,864 - INFO - main.py - train - 52 - 【train】 epoch:2 298/360 loss:0.7226
+2022-06-29 11:18:04,429 - INFO - main.py - train - 52 - 【train】 epoch:2 299/360 loss:0.3752
+2022-06-29 11:18:05,087 - INFO - main.py - train - 52 - 【train】 epoch:2 300/360 loss:1.0398
+2022-06-29 11:18:05,627 - INFO - main.py - train - 52 - 【train】 epoch:2 301/360 loss:0.6084
+2022-06-29 11:18:06,274 - INFO - main.py - train - 52 - 【train】 epoch:2 302/360 loss:1.7619
+2022-06-29 11:18:06,909 - INFO - main.py - train - 52 - 【train】 epoch:2 303/360 loss:1.0735
+2022-06-29 11:18:07,437 - INFO - main.py - train - 52 - 【train】 epoch:2 304/360 loss:2.2648
+2022-06-29 11:18:08,044 - INFO - main.py - train - 52 - 【train】 epoch:2 305/360 loss:1.0629
+2022-06-29 11:18:08,606 - INFO - main.py - train - 52 - 【train】 epoch:2 306/360 loss:1.6633
+2022-06-29 11:18:09,162 - INFO - main.py - train - 52 - 【train】 epoch:2 307/360 loss:1.1273
+2022-06-29 11:18:09,730 - INFO - main.py - train - 52 - 【train】 epoch:2 308/360 loss:1.1805
+2022-06-29 11:18:10,291 - INFO - main.py - train - 52 - 【train】 epoch:2 309/360 loss:0.8996
+2022-06-29 11:18:10,901 - INFO - main.py - train - 52 - 【train】 epoch:2 310/360 loss:0.2739
+2022-06-29 11:18:11,500 - INFO - main.py - train - 52 - 【train】 epoch:2 311/360 loss:1.1559
+2022-06-29 11:18:12,155 - INFO - main.py - train - 52 - 【train】 epoch:2 312/360 loss:2.1562
+2022-06-29 11:18:12,710 - INFO - main.py - train - 52 - 【train】 epoch:2 313/360 loss:0.6419
+2022-06-29 11:18:13,297 - INFO - main.py - train - 52 - 【train】 epoch:2 314/360 loss:0.9150
+2022-06-29 11:18:13,831 - INFO - main.py - train - 52 - 【train】 epoch:2 315/360 loss:1.8567
+2022-06-29 11:18:14,495 - INFO - main.py - train - 52 - 【train】 epoch:2 316/360 loss:1.0706
+2022-06-29 11:18:15,110 - INFO - main.py - train - 52 - 【train】 epoch:2 317/360 loss:1.1634
+2022-06-29 11:18:15,717 - INFO - main.py - train - 52 - 【train】 epoch:2 318/360 loss:0.9416
+2022-06-29 11:18:16,319 - INFO - main.py - train - 52 - 【train】 epoch:2 319/360 loss:1.1152
+2022-06-29 11:18:16,902 - INFO - main.py - train - 52 - 【train】 epoch:2 320/360 loss:0.3543
+2022-06-29 11:18:17,454 - INFO - main.py - train - 52 - 【train】 epoch:2 321/360 loss:1.2153
+2022-06-29 11:18:18,022 - INFO - main.py - train - 52 - 【train】 epoch:2 322/360 loss:0.4838
+2022-06-29 11:18:18,612 - INFO - main.py - train - 52 - 【train】 epoch:2 323/360 loss:0.7337
+2022-06-29 11:18:19,178 - INFO - main.py - train - 52 - 【train】 epoch:2 324/360 loss:0.6749
+2022-06-29 11:18:19,761 - INFO - main.py - train - 52 - 【train】 epoch:2 325/360 loss:0.7984
+2022-06-29 11:18:20,423 - INFO - main.py - train - 52 - 【train】 epoch:2 326/360 loss:0.9512
+2022-06-29 11:18:21,007 - INFO - main.py - train - 52 - 【train】 epoch:2 327/360 loss:0.4411
+2022-06-29 11:18:21,536 - INFO - main.py - train - 52 - 【train】 epoch:2 328/360 loss:0.8592
+2022-06-29 11:18:22,087 - INFO - main.py - train - 52 - 【train】 epoch:2 329/360 loss:0.9665
+2022-06-29 11:18:22,658 - INFO - main.py - train - 52 - 【train】 epoch:2 330/360 loss:1.3334
+2022-06-29 11:18:23,292 - INFO - main.py - train - 52 - 【train】 epoch:2 331/360 loss:0.5030
+2022-06-29 11:18:23,879 - INFO - main.py - train - 52 - 【train】 epoch:2 332/360 loss:1.4908
+2022-06-29 11:18:24,428 - INFO - main.py - train - 52 - 【train】 epoch:2 333/360 loss:0.3046
+2022-06-29 11:18:24,988 - INFO - main.py - train - 52 - 【train】 epoch:2 334/360 loss:0.5573
+2022-06-29 11:18:25,564 - INFO - main.py - train - 52 - 【train】 epoch:2 335/360 loss:1.1878
+2022-06-29 11:18:26,084 - INFO - main.py - train - 52 - 【train】 epoch:2 336/360 loss:0.4967
+2022-06-29 11:18:26,608 - INFO - main.py - train - 52 - 【train】 epoch:2 337/360 loss:0.7211
+2022-06-29 11:18:27,139 - INFO - main.py - train - 52 - 【train】 epoch:2 338/360 loss:0.9831
+2022-06-29 11:18:27,666 - INFO - main.py - train - 52 - 【train】 epoch:2 339/360 loss:1.3075
+2022-06-29 11:18:28,206 - INFO - main.py - train - 52 - 【train】 epoch:2 340/360 loss:1.2418
+2022-06-29 11:18:28,736 - INFO - main.py - train - 52 - 【train】 epoch:2 341/360 loss:0.9708
+2022-06-29 11:18:29,316 - INFO - main.py - train - 52 - 【train】 epoch:2 342/360 loss:0.7758
+2022-06-29 11:18:29,945 - INFO - main.py - train - 52 - 【train】 epoch:2 343/360 loss:0.8124
+2022-06-29 11:18:30,594 - INFO - main.py - train - 52 - 【train】 epoch:2 344/360 loss:1.1830
+2022-06-29 11:18:31,152 - INFO - main.py - train - 52 - 【train】 epoch:2 345/360 loss:0.4358
+2022-06-29 11:18:31,707 - INFO - main.py - train - 52 - 【train】 epoch:2 346/360 loss:1.3617
+2022-06-29 11:18:32,235 - INFO - main.py - train - 52 - 【train】 epoch:2 347/360 loss:1.3907
+2022-06-29 11:18:32,814 - INFO - main.py - train - 52 - 【train】 epoch:2 348/360 loss:1.2716
+2022-06-29 11:18:33,403 - INFO - main.py - train - 52 - 【train】 epoch:2 349/360 loss:0.5416
+2022-06-29 11:18:33,934 - INFO - main.py - train - 52 - 【train】 epoch:2 350/360 loss:0.8020
+2022-06-29 11:18:34,529 - INFO - main.py - train - 52 - 【train】 epoch:2 351/360 loss:2.9601
+2022-06-29 11:18:35,067 - INFO - main.py - train - 52 - 【train】 epoch:2 352/360 loss:0.4075
+2022-06-29 11:18:35,640 - INFO - main.py - train - 52 - 【train】 epoch:2 353/360 loss:1.9230
+2022-06-29 11:18:36,171 - INFO - main.py - train - 52 - 【train】 epoch:2 354/360 loss:0.3739
+2022-06-29 11:18:36,754 - INFO - main.py - train - 52 - 【train】 epoch:2 355/360 loss:1.1193
+2022-06-29 11:18:37,403 - INFO - main.py - train - 52 - 【train】 epoch:2 356/360 loss:1.2560
+2022-06-29 11:18:37,985 - INFO - main.py - train - 52 - 【train】 epoch:2 357/360 loss:0.4269
+2022-06-29 11:18:38,516 - INFO - main.py - train - 52 - 【train】 epoch:2 358/360 loss:0.8012
+2022-06-29 11:18:38,958 - INFO - main.py - train - 52 - 【train】 epoch:2 359/360 loss:0.3232
+2022-06-29 11:18:44,439 - INFO - main.py - train - 56 - [eval] loss:50.5745 precision=0.9489 recall=0.8938 f1_score=0.9206
+2022-06-29 11:18:44,440 - INFO - trainUtils.py - save_model - 70 - Saving model checkpoint to ./checkpoints/bert_bilstm_crf
+2022-06-29 11:21:54,478 - INFO - main.py - <module> - 192 - {0: 'O', 1: 'B-PRO', 2: 'I-PRO', 3: 'E-PRO', 4: 'S-PRO', 5: 'B-ORG', 6: 'I-ORG', 7: 'E-ORG', 8: 'S-ORG', 9: 'B-CONT', 10: 'I-CONT', 11: 'E-CONT', 12: 'S-CONT', 13: 'B-RACE', 14: 'I-RACE', 15: 'E-RACE', 16: 'S-RACE', 17: 'B-NAME', 18: 'I-NAME', 19: 'E-NAME', 20: 'S-NAME', 21: 'B-EDU', 22: 'I-EDU', 23: 'E-EDU', 24: 'S-EDU', 25: 'B-LOC', 26: 'I-LOC', 27: 'E-LOC', 28: 'S-LOC', 29: 'B-TITLE', 30: 'I-TITLE', 31: 'E-TITLE', 32: 'S-TITLE'}
+2022-06-29 11:21:54,478 - INFO - main.py - <module> - 194 - Namespace(adam_epsilon=1e-08, bert_dir='./model/chinese-roberta-wwm-ext/', crf_lr=0.03, data_dir='./data/cner', dropout=0.3, dropout_prob=0.1, eval_batch_size=12, gpu_ids='3', log_dir='./logs/', lr=3e-05, lstm_hidden=128, max_grad_norm=1, max_seq_len=150, num_layers=1, num_tags=33, other_lr=0.0003, output_dir='./checkpoints/', seed=123, swa_start=3, train_batch_size=32, train_epochs=3, use_crf='True', use_lstm='True', warmup_proportion=0.1, weight_decay=0.01)
+2022-06-29 11:22:03,879 - INFO - trainUtils.py - load_model_and_parallel - 106 - Use single gpu in: ['3']
+2022-06-29 11:22:03,885 - INFO - main.py - <module> - 220 - 虞兔良先生：1963年12月出生，汉族，中国国籍，无境外永久居留权，浙江绍兴人，中共党员，MBA，经济师。
+2022-06-29 11:22:06,064 - INFO - trainUtils.py - load_model_and_parallel - 96 - Load ckpt from ./checkpoints/bert_bilstm_crf/model.pt
+2022-06-29 11:22:07,053 - INFO - trainUtils.py - load_model_and_parallel - 106 - Use single gpu in: ['3']
+2022-06-29 11:22:07,245 - INFO - main.py - predict - 158 - {'NAME': [('虞兔良', 0)], 'RACE': [('汉族', 17)], 'CONT': [('中国国籍', 20)], 'LOC': [('浙江绍兴人', 34)], 'TITLE': [('中共党员', 40), ('MBA', 45), ('经济师', 49)]}
+2022-07-12 17:44:26,988 - INFO - main.py - <module> - 336 - {0: 'O', 1: 'B-人均收入', 2: 'I-人均收入', 3: 'E-人均收入', 4: 'S-人均收入', 5: 'B-存货', 6: 'I-存货', 7: 'E-存货', 8: 'S-存货', 9: 'B-IND申报数', 10: 'I-IND申报数', 11: 'E-IND申报数', 12: 'S-IND申报数', 13: 'B-投融资情况', 14: 'I-投融资情况', 15: 'E-投融资情况', 16: 'S-投融资情况', 17: 'B-CR5', 18: 'I-CR5', 19: 'E-CR5', 20: 'S-CR5', 21: 'B-利润增长', 22: 'I-利润增长', 23: 'E-利润增长', 24: 'S-利润增长', 25: 'B-研发费用率', 26: 'I-研发费用率', 27: 'E-研发费用率', 28: 'S-研发费用率', 29: 'B-PEG', 30: 'I-PEG', 31: 'E-PEG', 32: 'S-PEG', 33: 'B-临床试验数量', 34: 'I-临床试验数量', 35: 'E-临床试验数量', 36: 'S-临床试验数量', 37: 'B-行业公司', 38: 'I-行业公司', 39: 'E-行业公司', 40: 'S-行业公司', 41: 'B-市值', 42: 'I-市值', 43: 'E-市值', 44: 'S-市值', 45: 'B-现金流', 46: 'I-现金流', 47: 'E-现金流', 48: 'S-现金流', 49: 'B-扣非净利润增速', 50: 'I-扣非净利润增速', 51: 'E-扣非净利润增速', 52: 'S-扣非净利润增速', 53: 'B-PE', 54: 'I-PE', 55: 'E-PE', 56: 'S-PE', 57: 'B-地点范围', 58: 'I-地点范围', 59: 'E-地点范围', 60: 'S-地点范围', 61: 'B-扣非净利润', 62: 'I-扣非净利润', 63: 'E-扣非净利润', 64: 'S-扣非净利润', 65: 'B-行业趋势', 66: 'I-行业趋势', 67: 'E-行业趋势', 68: 'S-行业趋势', 69: 'B-新药获批数', 70: 'I-新药获批数', 71: 'E-新药获批数', 72: 'S-新药获批数', 73: 'B-利润', 74: 'I-利润', 75: 'E-利润', 76: 'S-利润', 77: 'B-固定资产增速', 78: 'I-固定资产增速', 79: 'E-固定资产增速', 80: 'S-固定资产增速', 81: 'B-时间连接词', 82: 'I-时间连接词', 83: 'E-时间连接词', 84: 'S-时间连接词', 85: 'B-研发费用', 86: 'I-研发费用', 87: 'E-研发费用', 88: 'S-研发费用', 89: 'B-行业供给', 90: 'I-行业供给', 91: 'E-行业供给', 92: 'S-行业供给', 93: 'B-营业收入', 94: 'I-营业收入', 95: 'E-营业收入', 96: 'S-营业收入', 97: 'B-员工数量', 98: 'I-员工数量', 99: 'E-员工数量', 100: 'S-员工数量', 101: 'B-竞争格局', 102: 'I-竞争格局', 103: 'E-竞争格局', 104: 'S-竞争格局', 105: 'B-主营业务', 106: 'I-主营业务', 107: 'E-主营业务', 108: 'S-主营业务', 109: 'B-市场集中度', 110: 'I-市场集中度', 111: 'E-市场集中度', 112: 'S-市场集中度', 113: 'B-产能', 114: 'I-产能', 115: 'E-产能', 116: 'S-产能', 117: 'B-主要玩家', 118: 'I-主要玩家', 119: 'E-主要玩家', 120: 'S-主要玩家', 121: 'B-CAGR', 122: 'I-CAGR', 123: 'E-CAGR', 124: 'S-CAGR', 125: 'B-属性值', 126: 'I-属性值', 127: 'E-属性值', 128: 'S-属性值', 129: 'B-投融资事件数', 130: 'I-投融资事件数', 131: 'E-投融资事件数', 132: 'S-投融资事件数', 133: 'B-行业', 134: 'I-行业', 135: 'E-行业', 136: 'S-行业', 137: 'B-行业需求', 138: 'I-行业需求', 139: 'E-行业需求', 140: 'S-行业需求', 141: 'B-假设情形', 142: 'I-假设情形', 143: 'E-假设情形', 144: 'S-假设情形', 145: 'B-财务情况', 146: 'I-财务情况', 147: 'E-财务情况', 148: 'S-财务情况', 149: 'B-CAPEX资本开支', 150: 'I-CAPEX资本开支', 151: 'E-CAPEX资本开支', 152: 'S-CAPEX资本开支', 153: 'B-合同负债', 154: 'I-合同负债', 155: 'E-合同负债', 156: 'S-合同负债', 157: 'B-归母净利润增速', 158: 'I-归母净利润增速', 159: 'E-归母净利润增速', 160: 'S-归母净利润增速', 161: 'B-ROE净资产回报率', 162: 'I-ROE净资产回报率', 163: 'E-ROE净资产回报率', 164: 'S-ROE净资产回报率', 165: 'B-业务指标情况', 166: 'I-业务指标情况', 167: 'E-业务指标情况', 168: 'S-业务指标情况', 169: 'B-CR10', 170: 'I-CR10', 171: 'E-CR10', 172: 'S-CR10', 173: 'B-公司', 174: 'I-公司', 175: 'E-公司', 176: 'S-公司', 177: 'B-人均利润', 178: 'I-人均利润', 179: 'E-人均利润', 180: 'S-人均利润', 181: 'B-属性连接词', 182: 'I-属性连接词', 183: 'E-属性连接词', 184: 'S-属性连接词', 185: 'B-新签订单', 186: 'I-新签订单', 187: 'E-新签订单', 188: 'S-新签订单', 189: 'B-外包率', 190: 'I-外包率', 191: 'E-外包率', 192: 'S-外包率', 193: 'B-收入增速', 194: 'I-收入增速', 195: 'E-收入增速', 196: 'S-收入增速', 197: 'B-营收占比', 198: 'I-营收占比', 199: 'E-营收占比', 200: 'S-营收占比', 201: 'B-龙头企业', 202: 'I-龙头企业', 203: 'E-龙头企业', 204: 'S-龙头企业', 205: 'B-客户数量', 206: 'I-客户数量', 207: 'E-客户数量', 208: 'S-客户数量', 209: 'B-市场规模', 210: 'I-市场规模', 211: 'E-市场规模', 212: 'S-市场规模', 213: 'B-在手订单', 214: 'I-在手订单', 215: 'E-在手订单', 216: 'S-在手订单', 217: 'B-投融资金额', 218: 'I-投融资金额', 219: 'E-投融资金额', 220: 'S-投融资金额', 221: 'B-FDA新药获批数', 222: 'I-FDA新药获批数', 223: 'E-FDA新药获批数', 224: 'S-FDA新药获批数', 225: 'B-ROIC资本回报率', 226: 'I-ROIC资本回报率', 227: 'E-ROIC资本回报率', 228: 'S-ROIC资本回报率', 229: 'B-固定资产', 230: 'I-固定资产', 231: 'E-固定资产', 232: 'S-固定资产', 233: 'B-时间范围', 234: 'I-时间范围', 235: 'E-时间范围', 236: 'S-时间范围', 237: 'B-毛利', 238: 'I-毛利', 239: 'E-毛利', 240: 'S-毛利', 241: 'B-归母净利润', 242: 'I-归母净利润', 243: 'E-归母净利润', 244: 'S-归母净利润', 245: 'B-业绩', 246: 'I-业绩', 247: 'E-业绩', 248: 'S-业绩', 249: 'B-营收增长', 250: 'I-营收增长', 251: 'E-营收增长', 252: 'S-营收增长', 253: 'B-市场份额', 254: 'I-市场份额', 255: 'E-市场份额', 256: 'S-市场份额'}
+2022-07-12 17:44:26,988 - INFO - main.py - <module> - 338 - Namespace(adam_epsilon=1e-08, bert_dir='./model/chinese-roberta-wwm-ext/', crf_lr=0.03, data_dir='./data/cxo_zh_entity', dropout=0.3, dropout_prob=0.1, eval_batch_size=12, gpu_ids='3', log_dir='./logs/', lr=3e-05, lstm_hidden=128, max_grad_norm=1, max_seq_len=150, num_layers=1, num_tags=257, other_lr=0.0003, output_dir='./checkpoints/cxo_zh_entity/', seed=123, swa_start=3, train_batch_size=32, train_epochs=3, use_crf='True', use_lstm='True', warmup_proportion=0.1, weight_decay=0.01)
+2022-07-12 17:44:33,769 - INFO - trainUtils.py - load_model_and_parallel - 106 - Use single gpu in: ['3']
+2022-07-12 17:44:34,525 - INFO - main.py - train - 52 - 【train】 epoch:0 0/213 loss:555.9788
+2022-07-12 17:44:35,053 - INFO - main.py - train - 52 - 【train】 epoch:0 1/213 loss:607.1221
+2022-07-12 17:44:35,558 - INFO - main.py - train - 52 - 【train】 epoch:0 2/213 loss:520.0105
+2022-07-12 17:44:36,067 - INFO - main.py - train - 52 - 【train】 epoch:0 3/213 loss:539.9413
+2022-07-12 17:44:36,580 - INFO - main.py - train - 52 - 【train】 epoch:0 4/213 loss:541.5954
+2022-07-12 17:44:37,096 - INFO - main.py - train - 52 - 【train】 epoch:0 5/213 loss:575.0769
+2022-07-12 17:44:37,602 - INFO - main.py - train - 52 - 【train】 epoch:0 6/213 loss:524.9067
+2022-07-12 17:44:38,108 - INFO - main.py - train - 52 - 【train】 epoch:0 7/213 loss:543.8989
+2022-07-12 17:44:38,616 - INFO - main.py - train - 52 - 【train】 epoch:0 8/213 loss:504.6553
+2022-07-12 17:44:39,117 - INFO - main.py - train - 52 - 【train】 epoch:0 9/213 loss:459.7286
+2022-07-12 17:44:39,624 - INFO - main.py - train - 52 - 【train】 epoch:0 10/213 loss:463.5903
+2022-07-12 17:44:40,131 - INFO - main.py - train - 52 - 【train】 epoch:0 11/213 loss:454.4816
+2022-07-12 17:44:40,647 - INFO - main.py - train - 52 - 【train】 epoch:0 12/213 loss:461.9523
+2022-07-12 17:44:41,152 - INFO - main.py - train - 52 - 【train】 epoch:0 13/213 loss:385.4110
+2022-07-12 17:44:41,655 - INFO - main.py - train - 52 - 【train】 epoch:0 14/213 loss:382.4448
+2022-07-12 17:44:42,154 - INFO - main.py - train - 52 - 【train】 epoch:0 15/213 loss:308.3594
+2022-07-12 17:44:42,664 - INFO - main.py - train - 52 - 【train】 epoch:0 16/213 loss:368.1895
+2022-07-12 17:44:43,178 - INFO - main.py - train - 52 - 【train】 epoch:0 17/213 loss:299.5749
+2022-07-12 17:44:43,689 - INFO - main.py - train - 52 - 【train】 epoch:0 18/213 loss:260.8328
+2022-07-12 17:44:44,208 - INFO - main.py - train - 52 - 【train】 epoch:0 19/213 loss:242.2821
+2022-07-12 17:44:44,728 - INFO - main.py - train - 52 - 【train】 epoch:0 20/213 loss:252.7753
+2022-07-12 17:44:45,259 - INFO - main.py - train - 52 - 【train】 epoch:0 21/213 loss:246.6231
+2022-07-12 17:44:45,769 - INFO - main.py - train - 52 - 【train】 epoch:0 22/213 loss:199.7614
+2022-07-12 17:44:46,280 - INFO - main.py - train - 52 - 【train】 epoch:0 23/213 loss:185.8967
+2022-07-12 17:44:46,792 - INFO - main.py - train - 52 - 【train】 epoch:0 24/213 loss:224.6988
+2022-07-12 17:44:47,305 - INFO - main.py - train - 52 - 【train】 epoch:0 25/213 loss:195.7932
+2022-07-12 17:44:47,818 - INFO - main.py - train - 52 - 【train】 epoch:0 26/213 loss:194.3830
+2022-07-12 17:44:48,332 - INFO - main.py - train - 52 - 【train】 epoch:0 27/213 loss:183.7161
+2022-07-12 17:44:48,849 - INFO - main.py - train - 52 - 【train】 epoch:0 28/213 loss:184.9599
+2022-07-12 17:44:49,367 - INFO - main.py - train - 52 - 【train】 epoch:0 29/213 loss:197.3518
+2022-07-12 17:44:49,888 - INFO - main.py - train - 52 - 【train】 epoch:0 30/213 loss:164.0120
+2022-07-12 17:44:50,397 - INFO - main.py - train - 52 - 【train】 epoch:0 31/213 loss:165.2208
+2022-07-12 17:44:50,906 - INFO - main.py - train - 52 - 【train】 epoch:0 32/213 loss:133.5078
+2022-07-12 17:44:51,419 - INFO - main.py - train - 52 - 【train】 epoch:0 33/213 loss:139.8502
+2022-07-12 17:44:51,939 - INFO - main.py - train - 52 - 【train】 epoch:0 34/213 loss:169.2661
+2022-07-12 17:44:52,450 - INFO - main.py - train - 52 - 【train】 epoch:0 35/213 loss:136.2075
+2022-07-12 17:44:52,966 - INFO - main.py - train - 52 - 【train】 epoch:0 36/213 loss:173.0921
+2022-07-12 17:44:53,483 - INFO - main.py - train - 52 - 【train】 epoch:0 37/213 loss:142.5001
+2022-07-12 17:44:54,008 - INFO - main.py - train - 52 - 【train】 epoch:0 38/213 loss:136.8734
+2022-07-12 17:44:54,522 - INFO - main.py - train - 52 - 【train】 epoch:0 39/213 loss:111.3212
+2022-07-12 17:44:55,031 - INFO - main.py - train - 52 - 【train】 epoch:0 40/213 loss:108.9788
+2022-07-12 17:44:55,552 - INFO - main.py - train - 52 - 【train】 epoch:0 41/213 loss:125.0879
+2022-07-12 17:44:56,080 - INFO - main.py - train - 52 - 【train】 epoch:0 42/213 loss:100.8807
+2022-07-12 17:44:56,608 - INFO - main.py - train - 52 - 【train】 epoch:0 43/213 loss:130.8617
+2022-07-12 17:44:57,133 - INFO - main.py - train - 52 - 【train】 epoch:0 44/213 loss:121.5240
+2022-07-12 17:44:57,659 - INFO - main.py - train - 52 - 【train】 epoch:0 45/213 loss:109.1408
+2022-07-12 17:44:58,189 - INFO - main.py - train - 52 - 【train】 epoch:0 46/213 loss:131.9899
+2022-07-12 17:44:58,720 - INFO - main.py - train - 52 - 【train】 epoch:0 47/213 loss:119.7232
+2022-07-12 17:44:59,248 - INFO - main.py - train - 52 - 【train】 epoch:0 48/213 loss:109.2195
+2022-07-12 17:44:59,769 - INFO - main.py - train - 52 - 【train】 epoch:0 49/213 loss:101.9489
+2022-07-12 17:45:00,292 - INFO - main.py - train - 52 - 【train】 epoch:0 50/213 loss:90.8250
+2022-07-12 17:45:00,809 - INFO - main.py - train - 52 - 【train】 epoch:0 51/213 loss:88.5168
+2022-07-12 17:45:01,330 - INFO - main.py - train - 52 - 【train】 epoch:0 52/213 loss:89.0751
+2022-07-12 17:45:01,853 - INFO - main.py - train - 52 - 【train】 epoch:0 53/213 loss:83.4965
+2022-07-12 17:45:02,375 - INFO - main.py - train - 52 - 【train】 epoch:0 54/213 loss:99.1969
+2022-07-12 17:45:02,898 - INFO - main.py - train - 52 - 【train】 epoch:0 55/213 loss:89.9493
+2022-07-12 17:45:03,423 - INFO - main.py - train - 52 - 【train】 epoch:0 56/213 loss:73.1707
+2022-07-12 17:45:03,948 - INFO - main.py - train - 52 - 【train】 epoch:0 57/213 loss:71.6750
+2022-07-12 17:45:04,469 - INFO - main.py - train - 52 - 【train】 epoch:0 58/213 loss:76.7739
+2022-07-12 17:45:05,003 - INFO - main.py - train - 52 - 【train】 epoch:0 59/213 loss:85.3890
+2022-07-12 17:45:05,533 - INFO - main.py - train - 52 - 【train】 epoch:0 60/213 loss:81.6500
+2022-07-12 17:45:06,063 - INFO - main.py - train - 52 - 【train】 epoch:0 61/213 loss:65.2330
+2022-07-12 17:45:06,590 - INFO - main.py - train - 52 - 【train】 epoch:0 62/213 loss:66.6535
+2022-07-12 17:45:07,114 - INFO - main.py - train - 52 - 【train】 epoch:0 63/213 loss:76.2833
+2022-07-12 17:45:07,649 - INFO - main.py - train - 52 - 【train】 epoch:0 64/213 loss:76.8365
+2022-07-12 17:45:08,176 - INFO - main.py - train - 52 - 【train】 epoch:0 65/213 loss:72.6285
+2022-07-12 17:45:08,701 - INFO - main.py - train - 52 - 【train】 epoch:0 66/213 loss:62.2608
+2022-07-12 17:45:09,235 - INFO - main.py - train - 52 - 【train】 epoch:0 67/213 loss:76.7512
+2022-07-12 17:45:09,768 - INFO - main.py - train - 52 - 【train】 epoch:0 68/213 loss:64.8857
+2022-07-12 17:45:10,299 - INFO - main.py - train - 52 - 【train】 epoch:0 69/213 loss:54.0290
+2022-07-12 17:45:10,764 - INFO - main.py - train - 52 - 【train】 epoch:0 70/213 loss:61.8124
+2022-07-12 17:45:11,455 - INFO - main.py - train - 52 - 【train】 epoch:1 71/213 loss:61.1336
+2022-07-12 17:45:11,987 - INFO - main.py - train - 52 - 【train】 epoch:1 72/213 loss:56.8630
+2022-07-12 17:45:12,515 - INFO - main.py - train - 52 - 【train】 epoch:1 73/213 loss:53.5814
+2022-07-12 17:45:13,050 - INFO - main.py - train - 52 - 【train】 epoch:1 74/213 loss:56.7565
+2022-07-12 17:45:13,577 - INFO - main.py - train - 52 - 【train】 epoch:1 75/213 loss:48.8258
+2022-07-12 17:45:14,106 - INFO - main.py - train - 52 - 【train】 epoch:1 76/213 loss:58.5750
+2022-07-12 17:45:14,638 - INFO - main.py - train - 52 - 【train】 epoch:1 77/213 loss:54.4686
+2022-07-12 17:45:15,168 - INFO - main.py - train - 52 - 【train】 epoch:1 78/213 loss:54.2240
+2022-07-12 17:45:15,701 - INFO - main.py - train - 52 - 【train】 epoch:1 79/213 loss:60.2571
+2022-07-12 17:45:16,230 - INFO - main.py - train - 52 - 【train】 epoch:1 80/213 loss:47.4997
+2022-07-12 17:45:16,760 - INFO - main.py - train - 52 - 【train】 epoch:1 81/213 loss:40.4105
+2022-07-12 17:45:17,290 - INFO - main.py - train - 52 - 【train】 epoch:1 82/213 loss:56.6212
+2022-07-12 17:45:17,828 - INFO - main.py - train - 52 - 【train】 epoch:1 83/213 loss:46.1228
+2022-07-12 17:45:18,364 - INFO - main.py - train - 52 - 【train】 epoch:1 84/213 loss:44.6499
+2022-07-12 17:45:18,901 - INFO - main.py - train - 52 - 【train】 epoch:1 85/213 loss:47.1451
+2022-07-12 17:45:19,433 - INFO - main.py - train - 52 - 【train】 epoch:1 86/213 loss:61.0978
+2022-07-12 17:45:19,969 - INFO - main.py - train - 52 - 【train】 epoch:1 87/213 loss:50.8519
+2022-07-12 17:45:20,501 - INFO - main.py - train - 52 - 【train】 epoch:1 88/213 loss:43.9302
+2022-07-12 17:45:21,028 - INFO - main.py - train - 52 - 【train】 epoch:1 89/213 loss:39.6529
+2022-07-12 17:45:43,139 - INFO - main.py - train - 56 - [eval] loss:7872.7928 precision=0.5565 recall=0.3424 f1_score=0.4240
+2022-07-12 17:45:43,139 - INFO - trainUtils.py - save_model - 70 - Saving model checkpoint to ./checkpoints/cxo_zh_entity/bert_bilstm_crf
+2022-07-12 17:45:44,432 - INFO - main.py - train - 52 - 【train】 epoch:1 90/213 loss:33.2227
+2022-07-12 17:45:44,965 - INFO - main.py - train - 52 - 【train】 epoch:1 91/213 loss:41.9621
+2022-07-12 17:45:45,498 - INFO - main.py - train - 52 - 【train】 epoch:1 92/213 loss:42.8193
+2022-07-12 17:45:46,028 - INFO - main.py - train - 52 - 【train】 epoch:1 93/213 loss:41.4953
+2022-07-12 17:45:46,571 - INFO - main.py - train - 52 - 【train】 epoch:1 94/213 loss:43.8330
+2022-07-12 17:45:47,088 - INFO - main.py - train - 52 - 【train】 epoch:1 95/213 loss:40.9165
+2022-07-12 17:45:47,615 - INFO - main.py - train - 52 - 【train】 epoch:1 96/213 loss:47.3759
+2022-07-12 17:45:48,129 - INFO - main.py - train - 52 - 【train】 epoch:1 97/213 loss:35.7207
+2022-07-12 17:45:48,651 - INFO - main.py - train - 52 - 【train】 epoch:1 98/213 loss:35.6212
+2022-07-12 17:45:49,168 - INFO - main.py - train - 52 - 【train】 epoch:1 99/213 loss:39.1094
+2022-07-12 17:45:49,684 - INFO - main.py - train - 52 - 【train】 epoch:1 100/213 loss:39.5636
+2022-07-12 17:45:50,212 - INFO - main.py - train - 52 - 【train】 epoch:1 101/213 loss:35.4126
+2022-07-12 17:45:50,726 - INFO - main.py - train - 52 - 【train】 epoch:1 102/213 loss:35.0370
+2022-07-12 17:45:51,241 - INFO - main.py - train - 52 - 【train】 epoch:1 103/213 loss:41.0587
+2022-07-12 17:45:51,753 - INFO - main.py - train - 52 - 【train】 epoch:1 104/213 loss:37.3443
+2022-07-12 17:45:52,272 - INFO - main.py - train - 52 - 【train】 epoch:1 105/213 loss:47.7829
+2022-07-12 17:45:52,786 - INFO - main.py - train - 52 - 【train】 epoch:1 106/213 loss:30.6756
+2022-07-12 17:45:53,294 - INFO - main.py - train - 52 - 【train】 epoch:1 107/213 loss:22.0436
+2022-07-12 17:45:53,817 - INFO - main.py - train - 52 - 【train】 epoch:1 108/213 loss:35.9846
+2022-07-12 17:45:54,333 - INFO - main.py - train - 52 - 【train】 epoch:1 109/213 loss:32.7736
+2022-07-12 17:45:54,859 - INFO - main.py - train - 52 - 【train】 epoch:1 110/213 loss:38.3320
+2022-07-12 17:45:55,373 - INFO - main.py - train - 52 - 【train】 epoch:1 111/213 loss:34.0527
+2022-07-12 17:45:55,902 - INFO - main.py - train - 52 - 【train】 epoch:1 112/213 loss:28.5445
+2022-07-12 17:45:56,422 - INFO - main.py - train - 52 - 【train】 epoch:1 113/213 loss:34.8560
+2022-07-12 17:45:56,937 - INFO - main.py - train - 52 - 【train】 epoch:1 114/213 loss:33.0227
+2022-07-12 17:45:57,449 - INFO - main.py - train - 52 - 【train】 epoch:1 115/213 loss:27.0111
+2022-07-12 17:45:57,968 - INFO - main.py - train - 52 - 【train】 epoch:1 116/213 loss:33.4816
+2022-07-12 17:45:58,482 - INFO - main.py - train - 52 - 【train】 epoch:1 117/213 loss:29.0600
+2022-07-12 17:45:58,999 - INFO - main.py - train - 52 - 【train】 epoch:1 118/213 loss:30.8834
+2022-07-12 17:45:59,525 - INFO - main.py - train - 52 - 【train】 epoch:1 119/213 loss:23.8186
+2022-07-12 17:46:00,050 - INFO - main.py - train - 52 - 【train】 epoch:1 120/213 loss:35.1080
+2022-07-12 17:46:00,568 - INFO - main.py - train - 52 - 【train】 epoch:1 121/213 loss:33.2326
+2022-07-12 17:46:01,089 - INFO - main.py - train - 52 - 【train】 epoch:1 122/213 loss:32.4049
+2022-07-12 17:46:01,607 - INFO - main.py - train - 52 - 【train】 epoch:1 123/213 loss:31.4382
+2022-07-12 17:46:02,121 - INFO - main.py - train - 52 - 【train】 epoch:1 124/213 loss:28.6095
+2022-07-12 17:46:02,640 - INFO - main.py - train - 52 - 【train】 epoch:1 125/213 loss:25.9741
+2022-07-12 17:46:03,173 - INFO - main.py - train - 52 - 【train】 epoch:1 126/213 loss:32.7032
+2022-07-12 17:46:03,692 - INFO - main.py - train - 52 - 【train】 epoch:1 127/213 loss:28.7084
+2022-07-12 17:46:04,211 - INFO - main.py - train - 52 - 【train】 epoch:1 128/213 loss:30.6012
+2022-07-12 17:46:04,729 - INFO - main.py - train - 52 - 【train】 epoch:1 129/213 loss:26.3729
+2022-07-12 17:46:05,242 - INFO - main.py - train - 52 - 【train】 epoch:1 130/213 loss:25.4516
+2022-07-12 17:46:05,754 - INFO - main.py - train - 52 - 【train】 epoch:1 131/213 loss:27.8114
+2022-07-12 17:46:06,275 - INFO - main.py - train - 52 - 【train】 epoch:1 132/213 loss:25.5517
+2022-07-12 17:46:06,796 - INFO - main.py - train - 52 - 【train】 epoch:1 133/213 loss:27.1924
+2022-07-12 17:46:07,321 - INFO - main.py - train - 52 - 【train】 epoch:1 134/213 loss:29.4474
+2022-07-12 17:46:07,836 - INFO - main.py - train - 52 - 【train】 epoch:1 135/213 loss:26.3395
+2022-07-12 17:46:08,355 - INFO - main.py - train - 52 - 【train】 epoch:1 136/213 loss:26.0522
+2022-07-12 17:46:08,874 - INFO - main.py - train - 52 - 【train】 epoch:1 137/213 loss:25.2617
+2022-07-12 17:46:09,386 - INFO - main.py - train - 52 - 【train】 epoch:1 138/213 loss:31.9458
+2022-07-12 17:46:09,910 - INFO - main.py - train - 52 - 【train】 epoch:1 139/213 loss:29.4813
+2022-07-12 17:46:10,430 - INFO - main.py - train - 52 - 【train】 epoch:1 140/213 loss:26.2445
+2022-07-12 17:46:10,869 - INFO - main.py - train - 52 - 【train】 epoch:1 141/213 loss:22.4681
+2022-07-12 17:46:11,562 - INFO - main.py - train - 52 - 【train】 epoch:2 142/213 loss:18.6630
+2022-07-12 17:46:12,076 - INFO - main.py - train - 52 - 【train】 epoch:2 143/213 loss:23.4764
+2022-07-12 17:46:12,592 - INFO - main.py - train - 52 - 【train】 epoch:2 144/213 loss:24.3868
+2022-07-12 17:46:13,111 - INFO - main.py - train - 52 - 【train】 epoch:2 145/213 loss:25.7708
+2022-07-12 17:46:13,631 - INFO - main.py - train - 52 - 【train】 epoch:2 146/213 loss:27.2572
+2022-07-12 17:46:14,158 - INFO - main.py - train - 52 - 【train】 epoch:2 147/213 loss:30.7295
+2022-07-12 17:46:14,674 - INFO - main.py - train - 52 - 【train】 epoch:2 148/213 loss:22.0391
+2022-07-12 17:46:15,199 - INFO - main.py - train - 52 - 【train】 epoch:2 149/213 loss:24.5746
+2022-07-12 17:46:15,715 - INFO - main.py - train - 52 - 【train】 epoch:2 150/213 loss:23.5750
+2022-07-12 17:46:16,243 - INFO - main.py - train - 52 - 【train】 epoch:2 151/213 loss:29.1349
+2022-07-12 17:46:16,758 - INFO - main.py - train - 52 - 【train】 epoch:2 152/213 loss:18.5529
+2022-07-12 17:46:17,272 - INFO - main.py - train - 52 - 【train】 epoch:2 153/213 loss:19.0293
+2022-07-12 17:46:17,785 - INFO - main.py - train - 52 - 【train】 epoch:2 154/213 loss:17.7147
+2022-07-12 17:46:18,298 - INFO - main.py - train - 52 - 【train】 epoch:2 155/213 loss:24.3957
+2022-07-12 17:46:18,812 - INFO - main.py - train - 52 - 【train】 epoch:2 156/213 loss:22.8640
+2022-07-12 17:46:19,334 - INFO - main.py - train - 52 - 【train】 epoch:2 157/213 loss:31.1665
+2022-07-12 17:46:19,849 - INFO - main.py - train - 52 - 【train】 epoch:2 158/213 loss:23.0913
+2022-07-12 17:46:20,363 - INFO - main.py - train - 52 - 【train】 epoch:2 159/213 loss:20.1563
+2022-07-12 17:46:20,878 - INFO - main.py - train - 52 - 【train】 epoch:2 160/213 loss:24.4690
+2022-07-12 17:46:21,398 - INFO - main.py - train - 52 - 【train】 epoch:2 161/213 loss:30.9923
+2022-07-12 17:46:21,921 - INFO - main.py - train - 52 - 【train】 epoch:2 162/213 loss:20.8912
+2022-07-12 17:46:22,439 - INFO - main.py - train - 52 - 【train】 epoch:2 163/213 loss:20.2296
+2022-07-12 17:46:22,961 - INFO - main.py - train - 52 - 【train】 epoch:2 164/213 loss:18.4086
+2022-07-12 17:46:23,485 - INFO - main.py - train - 52 - 【train】 epoch:2 165/213 loss:25.2309
+2022-07-12 17:46:24,007 - INFO - main.py - train - 52 - 【train】 epoch:2 166/213 loss:14.0973
+2022-07-12 17:46:24,521 - INFO - main.py - train - 52 - 【train】 epoch:2 167/213 loss:16.1870
+2022-07-12 17:46:25,040 - INFO - main.py - train - 52 - 【train】 epoch:2 168/213 loss:22.2508
+2022-07-12 17:46:25,561 - INFO - main.py - train - 52 - 【train】 epoch:2 169/213 loss:32.4073
+2022-07-12 17:46:26,084 - INFO - main.py - train - 52 - 【train】 epoch:2 170/213 loss:21.7290
+2022-07-12 17:46:26,608 - INFO - main.py - train - 52 - 【train】 epoch:2 171/213 loss:20.6797
+2022-07-12 17:46:27,124 - INFO - main.py - train - 52 - 【train】 epoch:2 172/213 loss:21.9190
+2022-07-12 17:46:27,632 - INFO - main.py - train - 52 - 【train】 epoch:2 173/213 loss:13.9955
+2022-07-12 17:46:28,146 - INFO - main.py - train - 52 - 【train】 epoch:2 174/213 loss:18.6077
+2022-07-12 17:46:28,660 - INFO - main.py - train - 52 - 【train】 epoch:2 175/213 loss:28.6427
+2022-07-12 17:46:29,175 - INFO - main.py - train - 52 - 【train】 epoch:2 176/213 loss:22.8158
+2022-07-12 17:46:29,689 - INFO - main.py - train - 52 - 【train】 epoch:2 177/213 loss:22.5829
+2022-07-12 17:46:30,204 - INFO - main.py - train - 52 - 【train】 epoch:2 178/213 loss:23.8817
+2022-07-12 17:46:30,719 - INFO - main.py - train - 52 - 【train】 epoch:2 179/213 loss:19.7766
+2022-07-12 17:46:52,474 - INFO - main.py - train - 56 - [eval] loss:3731.5221 precision=0.7186 recall=0.6458 f1_score=0.6802
+2022-07-12 17:46:52,474 - INFO - trainUtils.py - save_model - 70 - Saving model checkpoint to ./checkpoints/cxo_zh_entity/bert_bilstm_crf
+2022-07-12 17:46:53,866 - INFO - main.py - train - 52 - 【train】 epoch:2 180/213 loss:22.8435
+2022-07-12 17:46:54,385 - INFO - main.py - train - 52 - 【train】 epoch:2 181/213 loss:18.7448
+2022-07-12 17:46:54,900 - INFO - main.py - train - 52 - 【train】 epoch:2 182/213 loss:20.9279
+2022-07-12 17:46:55,418 - INFO - main.py - train - 52 - 【train】 epoch:2 183/213 loss:25.3644
+2022-07-12 17:46:55,935 - INFO - main.py - train - 52 - 【train】 epoch:2 184/213 loss:27.2511
+2022-07-12 17:46:56,446 - INFO - main.py - train - 52 - 【train】 epoch:2 185/213 loss:24.6986
+2022-07-12 17:46:56,965 - INFO - main.py - train - 52 - 【train】 epoch:2 186/213 loss:19.7264
+2022-07-12 17:46:57,477 - INFO - main.py - train - 52 - 【train】 epoch:2 187/213 loss:19.3946
+2022-07-12 17:46:57,996 - INFO - main.py - train - 52 - 【train】 epoch:2 188/213 loss:19.9217
+2022-07-12 17:46:58,517 - INFO - main.py - train - 52 - 【train】 epoch:2 189/213 loss:23.9695
+2022-07-12 17:46:59,037 - INFO - main.py - train - 52 - 【train】 epoch:2 190/213 loss:17.4051
+2022-07-12 17:46:59,555 - INFO - main.py - train - 52 - 【train】 epoch:2 191/213 loss:17.9470
+2022-07-12 17:47:00,083 - INFO - main.py - train - 52 - 【train】 epoch:2 192/213 loss:18.7928
+2022-07-12 17:47:00,603 - INFO - main.py - train - 52 - 【train】 epoch:2 193/213 loss:18.9940
+2022-07-12 17:47:01,117 - INFO - main.py - train - 52 - 【train】 epoch:2 194/213 loss:20.7582
+2022-07-12 17:47:01,634 - INFO - main.py - train - 52 - 【train】 epoch:2 195/213 loss:17.6601
+2022-07-12 17:47:02,149 - INFO - main.py - train - 52 - 【train】 epoch:2 196/213 loss:24.5954
+2022-07-12 17:47:02,667 - INFO - main.py - train - 52 - 【train】 epoch:2 197/213 loss:23.4990
+2022-07-12 17:47:03,194 - INFO - main.py - train - 52 - 【train】 epoch:2 198/213 loss:21.3503
+2022-07-12 17:47:03,716 - INFO - main.py - train - 52 - 【train】 epoch:2 199/213 loss:16.9821
+2022-07-12 17:47:04,227 - INFO - main.py - train - 52 - 【train】 epoch:2 200/213 loss:15.4688
+2022-07-12 17:47:04,740 - INFO - main.py - train - 52 - 【train】 epoch:2 201/213 loss:22.6914
+2022-07-12 17:47:05,253 - INFO - main.py - train - 52 - 【train】 epoch:2 202/213 loss:21.8657
+2022-07-12 17:47:05,780 - INFO - main.py - train - 52 - 【train】 epoch:2 203/213 loss:28.8098
+2022-07-12 17:47:06,305 - INFO - main.py - train - 52 - 【train】 epoch:2 204/213 loss:17.9255
+2022-07-12 17:47:06,821 - INFO - main.py - train - 52 - 【train】 epoch:2 205/213 loss:21.1440
+2022-07-12 17:47:07,337 - INFO - main.py - train - 52 - 【train】 epoch:2 206/213 loss:17.5296
+2022-07-12 17:47:07,857 - INFO - main.py - train - 52 - 【train】 epoch:2 207/213 loss:16.1669
+2022-07-12 17:47:08,375 - INFO - main.py - train - 52 - 【train】 epoch:2 208/213 loss:20.2458
+2022-07-12 17:47:08,894 - INFO - main.py - train - 52 - 【train】 epoch:2 209/213 loss:20.6837
+2022-07-12 17:47:09,417 - INFO - main.py - train - 52 - 【train】 epoch:2 210/213 loss:17.8195
+2022-07-12 17:47:09,927 - INFO - main.py - train - 52 - 【train】 epoch:2 211/213 loss:19.6128
+2022-07-12 17:47:10,384 - INFO - main.py - train - 52 - 【train】 epoch:2 212/213 loss:26.1672
+2022-07-12 17:47:11,775 - INFO - trainUtils.py - load_model_and_parallel - 96 - Load ckpt from ./checkpoints/cxo_zh_entity/bert_bilstm_crf/model.pt
+2022-07-12 17:47:12,330 - INFO - trainUtils.py - load_model_and_parallel - 106 - Use single gpu in: ['3']
+2022-07-12 17:47:33,715 - INFO - main.py - test - 130 -            precision    recall  f1-score   support
+
+     人均收入       0.00      0.00      0.00        24
+       存货       0.00      0.00      0.00        14
+   IND申报数       0.00      0.00      0.00        11
+    投融资情况       0.00      0.00      0.00        63
+      CR5       0.00      0.00      0.00        21
+     利润增长       0.00      0.00      0.00         1
+    研发费用率       0.00      0.00      0.00        22
+      PEG       0.00      0.00      0.00        20
+   临床试验数量       0.00      0.00      0.00         4
+     行业公司       0.66      0.59      0.62       788
+       市值       0.00      0.00      0.00        19
+      现金流       0.00      0.00      0.00        40
+  扣非净利润增速       0.00      0.00      0.00         9
+       PE       0.00      0.00      0.00        65
+     地点范围       0.84      0.88      0.86      1817
+    扣非净利润       0.00      0.00      0.00        46
+     行业趋势       0.00      0.00      0.00         4
+    新药获批数       0.00      0.00      0.00         1
+       利润       0.00      0.00      0.00       142
+   固定资产增速       0.00      0.00      0.00         3
+    时间连接词       0.00      0.00      0.00         9
+     研发费用       0.53      0.60      0.56       182
+     行业供给       0.00      0.00      0.00        11
+     营业收入       0.50      0.95      0.65       700
+     员工数量       0.00      0.00      0.00        27
+     竞争格局       0.00      0.00      0.00        26
+     主营业务       0.00      0.00      0.00        27
+    市场集中度       0.00      0.00      0.00        56
+       产能       0.00      0.00      0.00       136
+     主要玩家       0.00      0.00      0.00         1
+     CAGR       0.55      0.63      0.59       204
+      属性值       0.59      0.44      0.50      3382
+   投融资事件数       0.00      0.00      0.00        27
+       行业       0.69      0.67      0.68      3537
+     行业需求       0.00      0.00      0.00       104
+     假设情形       0.00      0.00      0.00        17
+     财务情况       0.00      0.00      0.00         6
+CAPEX资本开支       0.00      0.00      0.00        77
+     合同负债       0.00      0.00      0.00        18
+  归母净利润增速       0.76      0.46      0.57        63
+ROE净资产回报率       0.00      0.00      0.00        48
+   业务指标情况       0.00      0.00      0.00         1
+     CR10       0.00      0.00      0.00        16
+       公司       0.93      0.87      0.90      2423
+     人均利润       0.00      0.00      0.00        11
+    属性连接词       0.00      0.00      0.00         1
+     新签订单       0.00      0.00      0.00        11
+      外包率       0.00      0.00      0.00        16
+     收入增速       0.93      0.31      0.46       130
+     营收占比       0.00      0.00      0.00        36
+     龙头企业       0.83      0.34      0.48       193
+     客户数量       0.00      0.00      0.00         7
+     市场规模       0.63      0.75      0.68       181
+     在手订单       0.00      0.00      0.00        50
+    投融资金额       0.00      0.00      0.00        63
+ FDA新药获批数       0.00      0.00      0.00         2
+ROIC资本回报率       0.00      0.00      0.00        18
+     固定资产       0.00      0.00      0.00        26
+     时间范围       0.85      0.85      0.85      3042
+       毛利       0.22      0.07      0.11       172
+    归母净利润       0.38      0.91      0.54       327
+       业绩       0.71      0.26      0.38       263
+     营收增长       0.00      0.00      0.00        11
+     市场份额       0.90      0.15      0.26       124
+
+ micro-f1       0.72      0.65      0.68     18896
+
+2022-07-12 17:47:33,718 - INFO - main.py - <module> - 364 - 虞兔良先生：1963年12月出生，汉族，中国国籍，无境外永久居留权，浙江绍兴人，中共党员，MBA，经济师。
+2022-07-12 17:47:34,883 - INFO - trainUtils.py - load_model_and_parallel - 96 - Load ckpt from ./checkpoints/cxo_zh_entity/bert_bilstm_crf/model.pt
+2022-07-12 17:47:35,395 - INFO - trainUtils.py - load_model_and_parallel - 106 - Use single gpu in: ['3']
+2022-07-12 17:47:35,440 - INFO - main.py - predict - 158 - {'时间范围': [('1963年12月', 6)]}

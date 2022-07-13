@@ -213,9 +213,10 @@ def save_file(filename, data ,id2ent):
 
 if __name__ == '__main__':
 
-    dataset = "clue"
+    dataset = "cxo_zh_entity"
     args = config.Args().get_parser()
-    args.bert_dir = '../model_hub/chinese-bert-wwm-ext/'
+    #args.bert_dir = '../model_hub/chinese-bert-wwm-ext/'
+    args.bert_dir = '/home/songcaifu/kg/kbqa/pytorch_bert_bilstm_crf_ner/model/chinese-roberta-wwm-ext'
     commonUtils.set_logger(os.path.join(args.log_dir, 'preprocess.log'))
 
     if dataset == "c":
@@ -280,3 +281,24 @@ if __name__ == '__main__':
         save_file(os.path.join(mid_data_path,"clue_{}_cut.txt".format(args.max_seq_len)), train_data, id2ent)
         dev_data = get_data(processor, mid_data_path, "dev.json", "dev", ent2id, labels, args)
         # test_data = get_data(processor, mid_data_path, "test.json", "test", ent2id, labels, args)
+
+    elif dataset == "cxo_zh_entity":
+        args.data_dir = './data/cxo_zh_entity'
+        args.max_seq_len = 150
+
+        labels_path = os.path.join(args.data_dir, 'mid_data', 'labels.json')
+        with open(labels_path, 'r') as fp:
+            labels = json.load(fp)
+
+        ent2id_path = os.path.join(args.data_dir, 'mid_data')
+        with open(os.path.join(ent2id_path, 'nor_ent2id.json'), encoding='utf-8') as f:
+            ent2id = json.load(f)
+        id2ent = {v: k for k, v in ent2id.items()}
+
+        mid_data_path = os.path.join(args.data_dir, 'mid_data')
+        processor = NerProcessor(cut_sent=True, cut_sent_len=args.max_seq_len)
+
+        train_data = get_data(processor, mid_data_path, "train.json", "train", ent2id, labels, args)
+        save_file(os.path.join(mid_data_path,"cner_{}_cut.txt".format(args.max_seq_len)), train_data, id2ent)
+        dev_data = get_data(processor, mid_data_path, "dev.json", "dev", ent2id, labels, args)
+        test_data = get_data(processor, mid_data_path, "test.json", "test", ent2id, labels, args)

@@ -10,11 +10,11 @@ class Args:
     @staticmethod
     def initialize(parser):
         # args for path
-        parser.add_argument('--output_dir', default='./checkpoints/',
+        parser.add_argument('--output_dir', default='./checkpoints/cxo_zh_entity/',
                             help='the output dir for model checkpoints')
 
-        parser.add_argument('--bert_dir', default='../model_hub/bert-base-chinese/',
-                            help='bert dir for uer')
+        #parser.add_argument('--bert_dir', default='../model_hub/bert-base-chinese/',help='bert dir for uer')
+        parser.add_argument('--bert_dir', default='./model/chinese-roberta-wwm-ext/',help='bert dir for uer')
         parser.add_argument('--data_dir', default='./data/cner/',
                             help='data dir for uer')
         parser.add_argument('--log_dir', default='./logs/',
@@ -25,7 +25,7 @@ class Args:
                             help='number of tags')
         parser.add_argument('--seed', type=int, default=123, help='random seed')
 
-        parser.add_argument('--gpu_ids', type=str, default='0',
+        parser.add_argument('--gpu_ids', type=str, default='3',
                             help='gpu ids to use, -1 for cpu, "0,1" for multi gpu')
 
         parser.add_argument('--max_seq_len', default=256, type=int)
@@ -36,7 +36,7 @@ class Args:
                             help='the epoch when swa start')
 
         # train args
-        parser.add_argument('--train_epochs', default=15, type=int,
+        parser.add_argument('--train_epochs', default=5, type=int,
                             help='Max training epoch')
 
         parser.add_argument('--dropout_prob', default=0.1, type=float,
